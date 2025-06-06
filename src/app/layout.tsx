@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
+import MetaPixel from '@/lib/meta-pixel';
 
 const Logo = '/logo.webp';
 
@@ -28,8 +29,8 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${geistSans.variable} antialiased`}>
             <body className={`font-[family-name:var(--font-geist-sans)] bg-secondary/10`}>
-                {/* <Navbar /> */}
                 {children}
+                <MetaPixel />
             </body>
         </html>
     );
