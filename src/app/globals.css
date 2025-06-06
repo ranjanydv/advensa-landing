@@ -129,7 +129,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background selection:bg-accent text-foreground selection:text-white;
   }
 }
 

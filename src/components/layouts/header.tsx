@@ -70,7 +70,7 @@ export function Header() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
                             transition={{ duration: 0.3, ease: 'easeInOut' }}
-                            className="md:hidden top-full left-0 absolute border-white/20 border-t w-full glass-effect">
+                            className="md:hidden top-full left-0 absolute border-white/20 border-t w-full glass-effect glass-effect">
                             <nav className="flex flex-col space-y-4 p-4">
                                 {['Treks', 'Services', 'About', 'Contact'].map((item) => (
                                     <Link
