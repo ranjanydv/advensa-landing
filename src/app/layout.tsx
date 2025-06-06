@@ -1,15 +1,13 @@
-import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
-import './globals.css';
 import MetaPixel from '@/lib/meta-pixel';
+import type { Metadata } from 'next';
+import { Lexend_Deca } from 'next/font/google';
+import './globals.css';
 
 const Logo = '/logo.webp';
 
-const geistSans = Poppins({
+const geistSans = Lexend_Deca({
     variable: '--font-geist-sans',
     subsets: ['latin'],
-    weight: ['300', '400', '500', '600', '700', '800', '900'],
-    display: 'swap',
 });
 
 export const metadata: Metadata = {

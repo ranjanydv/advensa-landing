@@ -72,12 +72,12 @@ export function PopularTreksSection() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                                 <div className="top-4 left-4 absolute">
                                     <span
-                                        className={`px-3 py-1 rounded-full text-xs font-semibold glass-effect ${
+                                        className={`px-3 py-1 rounded-full text-xs font-semibold glass-effect bg-white/60! ${
                                             trek.difficulty === 'Challenging'
-                                                ? 'text-red-400'
+                                                ? 'text-red-700'
                                                 : trek.difficulty === 'Moderate'
-                                                ? 'text-yellow-400'
-                                                : 'text-green-400'
+                                                ? 'text-yellow-600'
+                                                : 'text-green-600'
                                         }`}>
                                         {trek.difficulty}
                                     </span>

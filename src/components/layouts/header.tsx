@@ -1,11 +1,12 @@
 'use client';
 
 import { MenuIcon } from '@/lib/icons/Menu';
+import { cn } from '@/lib/utils';
+import { AnimatePresence, motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { Button } from '../ui/button';
-import { AnimatePresence, motion } from 'motion/react';
+import { buttonVariants } from '../ui/button';
 
 export function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -48,10 +49,9 @@ export function Header() {
                                 <span className="-bottom-1 left-0 absolute bg-gradient-to-r from-primary to-accent w-0 group-hover:w-full h-0.5 transition-all duration-300" />
                             </Link>
                         ))}
-                        <Button size="lg" className="" variant={'secondary'}>
+                        <Link className={cn(buttonVariants({ size: 'lg', variant: 'secondary' }), 'h-12')} href="#contact">
                             Book Now
-                        </Button>
-                        {/* <GradientButton size="sm">Book Now</GradientButton> */}
+                        </Link>
                     </nav>
 
                     {/* Mobile Menu Button */}
@@ -81,9 +81,12 @@ export function Header() {
                                         {item}
                                     </Link>
                                 ))}
-                                <Button className="" variant={'secondary'}>
+                                <Link
+                                    className={buttonVariants({ size: 'lg', variant: 'secondary' })}
+                                    href="#contact"
+                                    onClick={() => setIsMobileMenuOpen(false)}>
                                     Book Now
-                                </Button>
+                                </Link>
                             </nav>
                         </motion.div>
                     )}
