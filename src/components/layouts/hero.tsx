@@ -27,16 +27,12 @@ export function HeroSection() {
                             </h1>
 
                             <p className="max-w-2xl text-muted-foreground text-xl leading-relaxed">
-                                Discover the wonders of Nepal with our expert travel services. From majestic mountain treks to cultural city tours, we
-                                create unforgettable journeys tailored to your dreams.
+                                Discover the wonders of Nepal with our expert travel services. From majestic mountain treks to cultural city tours, we create unforgettable journeys tailored to your dreams.
                             </p>
                         </div>
 
                         <div className="flex sm:flex-row flex-col gap-4">
-                            <GradientButton
-                                size="lg"
-                                className="group"
-                                onClick={() => window.scrollTo({ top: document.getElementById('contact')?.offsetTop || 0, behavior: 'smooth' })}>
+                            <GradientButton size="lg" className="group">
                                 <Calendar className="mr-2 w-5 h-5 group-hover:rotate-12 transition-transform" />
                                 Book Your Trek
                             </GradientButton>
